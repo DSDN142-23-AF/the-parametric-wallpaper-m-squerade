@@ -2,6 +2,7 @@ You will need to fill out this file for hand in.
 
 The bellow is just an example, feel free to disregard this documents contents.
 
+Hello!
 
 Your final settings.txt will look something like this when you are finished:
 
