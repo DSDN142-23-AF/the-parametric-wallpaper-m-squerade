@@ -8,48 +8,216 @@ Your final settings.txt will look something like this when you are finished:
 
 /////////////////////////////////
 
-Wallpaper 1:
+Wallpaper 1: Summer Fun
 
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let my_width = 200;
+let my_height = 200;
+let my_tile_style_background = 1; // value from 0 - 2
+let my_tile_style_foreground = 0; // value from 0 - 2
+let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#cc1f93','#a91d93', '#cc1f93', '#ff4f93'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#ff3374', '#ff9974', '#ff6674', '#ffff74'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
+const show_guide = false; 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.output_mode(GRID_WALLPAPER); 
+  pWallpaper.resolution(NINE_PORTRAIT); 
+  pWallpaper.show_guide(show_guide);
 
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = my_width;
+  pWallpaper.grid_settings.cell_height = my_height;
+  pWallpaper.grid_settings.row_offset  = my_width / 2;
 }
 
 /////////////////////////////////
 
-Wallpaper 2:
+Wallpaper 2: Chess on the Beach
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let my_width = 200;
+let my_height = 200;
+let my_tile_style_background = 0; // value from 0 - 2
+let my_tile_style_foreground = 1; // value from 0 - 2
+let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#cc1f93','#a91d93', '#cc1f93', '#ff4f93'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#ff3374', '#ff9974', '#ff6674', '#ffff74'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
+const show_guide = false; 
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); 
+  pWallpaper.resolution(NINE_PORTRAIT); 
+  pWallpaper.show_guide(show_guide);
+
+  pWallpaper.grid_settings.cell_width  = my_width;
+  pWallpaper.grid_settings.cell_height = my_height;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 3: Moonlight Slide
+
+let my_width = 200;
+let my_height = 200;
+let my_tile_style_background = 1; // value from 0 - 2
+let my_tile_style_foreground = 2; // value from 0 - 2
+// let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#cc1f93','#a91d93', '#cc1f93', '#ff4f93'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#ff3374', '#ff9974', '#ff6674', '#ffff74'] // bg_b, bg_f, fg_b, fg_f
+let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
+const show_guide = false; 
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); 
+  pWallpaper.resolution(NINE_PORTRAIT); 
+  pWallpaper.show_guide(show_guide);
+
+  pWallpaper.grid_settings.cell_width  = my_width;
+  pWallpaper.grid_settings.cell_height = my_height;
+  pWallpaper.grid_settings.row_offset  = my_width / 2;
+}
+
+/////////////////////////////////
+
+Wallpaper 4: Peaches and Cream
+
+let my_width = 100;
+let my_height = 200;
+let my_tile_style_background = 2; // value from 0 - 2
+let my_tile_style_foreground = 0; // value from 0 - 2
+// let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#cc1f93','#a91d93', '#cc1f93', '#ff4f93'] // bg_b, bg_f, fg_b, fg_f
+let my_colours = ['#ff3374', '#ff9974', '#ff6674', '#ffff74'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
+const show_guide = false; 
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); 
+  pWallpaper.resolution(NINE_PORTRAIT); 
+  pWallpaper.show_guide(show_guide);
+
+  pWallpaper.grid_settings.cell_width  = my_width;
+  pWallpaper.grid_settings.cell_height = my_height;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 5: Raindrops in Spring
+
+let my_width = 100;
+let my_height = 200;
+let my_tile_style_background = 1; // value from 0 - 2
+let my_tile_style_foreground = 2; // value from 0 - 2
+// let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#cc1f93','#a91d93', '#cc1f93', '#ff4f93'] // bg_b, bg_f, fg_b, fg_f
+let my_colours = ['#ff3374', '#ff9974', '#ff6674', '#ffff74'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
+const show_guide = false;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_PORTRAIT); 
+  pWallpaper.show_guide(show_guide);
 
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = my_width;
+  pWallpaper.grid_settings.cell_height = my_height;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 6: Wiggle Worm
+
+let my_width = 200;
+let my_height = 150;
+let my_tile_style_background = 2; // value from 0 - 2
+let my_tile_style_foreground = 2; // value from 0 - 2
+// let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
+let my_colours = ['#cc1f93','#a91d93', '#cc1f93', '#ff4f93'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#ff3374', '#ff9974', '#ff6674', '#ffff74'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
+const show_guide = false;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); 
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(show_guide);
+
+  pWallpaper.grid_settings.cell_width  = my_width;
+  pWallpaper.grid_settings.cell_height = my_height;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 7: Beachball Sundae
+
+let my_width = 200;
+let my_height = 150;
+let my_tile_style_background = 0; // value from 0 - 2
+let my_tile_style_foreground = 1; // value from 0 - 2
+// let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
+let my_colours = ['#cc1f93','#a91d93', '#cc1f93', '#ff4f93'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#ff3374', '#ff9974', '#ff6674', '#ffff74'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
+const show_guide = false; 
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(show_guide);
+
+  pWallpaper.grid_settings.cell_width  = my_width;
+  pWallpaper.grid_settings.cell_height = my_height;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 8: Lemonade 
+
+let my_width = 100;
+let my_height = 200;
+let my_tile_style_background = 2; // value from 0 - 2
+let my_tile_style_foreground = 2; // value from 0 - 2
+let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#cc1f93','#a91d93', '#cc1f93', '#ff4f93'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#ff3374', '#ff9974', '#ff6674', '#ffff74'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
+const show_guide = false; 
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); 
+  pWallpaper.resolution(NINE_PORTRAIT); 
+  pWallpaper.show_guide(show_guide);
+
+  pWallpaper.grid_settings.cell_width  = my_width;
+  pWallpaper.grid_settings.cell_height = my_height;
+  pWallpaper.grid_settings.row_offset  = my_width / 2; 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 9: Christmas Sweater
+
+let my_width = 50;
+let my_height = 165;
+let my_tile_style_background = 0; // value from 0 - 2
+let my_tile_style_foreground = 1; // value from 0 - 2
+// let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
+let my_colours = ['#cc1f93','#a91d93', '#cc1f93', '#ff4f93'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#ff3374', '#ff9974', '#ff6674', '#ffff74'] // bg_b, bg_f, fg_b, fg_f
+// let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
+const show_guide = false; // TODO - set this to false when you're ready to print
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); // DEVELOP_GLYPH; GRID_WALLPAPER; GLIDE_WALLPAPER
+  pWallpaper.resolution(NINE_PORTRAIT); // FIT_TO_SCREEN; NINE_LANDSCAPE
+  pWallpaper.show_guide(show_guide);
+
+  pWallpaper.grid_settings.cell_width  = my_width;
+  pWallpaper.grid_settings.cell_height = my_height;
   pWallpaper.grid_settings.row_offset  = 0;
 }

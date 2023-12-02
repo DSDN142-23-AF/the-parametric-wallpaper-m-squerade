@@ -1,26 +1,25 @@
-// parameters
-let my_width = 200;
+// parameters (the one i currently have set up is my fav!)
+let my_width = 100;
 let my_height = 200;
-let my_tile_style_background = 0; // value from 0 - 2
+let my_tile_style_background = 2; // value from 0 - 2
 let my_tile_style_foreground = 2; // value from 0 - 2
-//let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
+let my_colours = ['#66d399', '#33D3CC','#99D366', '#FFD300'] // bg_b, bg_f, fg_b, fg_f
 // let my_colours = ['#cc1f93','#a91d93', '#cc1f93', '#ff4f93'] // bg_b, bg_f, fg_b, fg_f
 // let my_colours = ['#ff3374', '#ff9974', '#ff6674', '#ffff74'] // bg_b, bg_f, fg_b, fg_f
-let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
-const show_guide = false; // TODO - set this to false when you're ready to print
+// let my_colours = ['#403fff', '#3f57ff', '#3f99ff', '#3fbaff'] // bg_b, bg_f, fg_b, fg_f
+const show_guide = false; 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER); // DEVELOP_GLYPH; GRID_WALLPAPER; GLIDE_WALLPAPER
-  pWallpaper.resolution(NINE_PORTRAIT); // FIT_TO_SCREEN; NINE_LANDSCAPE
+  pWallpaper.output_mode(GRID_WALLPAPER); 
+  pWallpaper.resolution(NINE_PORTRAIT); 
   pWallpaper.show_guide(show_guide);
 
   pWallpaper.grid_settings.cell_width  = my_width;
   pWallpaper.grid_settings.cell_height = my_height;
-  pWallpaper.grid_settings.row_offset  = 0; // my_width / 2;
+  pWallpaper.grid_settings.row_offset  = my_width / 2; // 0;
 }
 
-
-// my functions
+// my functions (yippee)
 
 let width_25 = my_width / 4;
 let width_50 = my_width / 2;
@@ -99,7 +98,7 @@ function my_symbol_foreground() {
 }
 
 
-// required functions
+// required functions (im not sure if im using these right)
 
 function wallpaper_background() {
   background(my_colours[0]); // bg_b
