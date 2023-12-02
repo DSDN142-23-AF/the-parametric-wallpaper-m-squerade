@@ -11,7 +11,7 @@ const show_guide = false;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER); 
-  pWallpaper.resolution(NINE_PORTRAIT); 
+  pWallpaper.resolution(A3); 
   pWallpaper.show_guide(show_guide);
 
   pWallpaper.grid_settings.cell_width  = my_width;
